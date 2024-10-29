@@ -1,0 +1,121 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    color: #333;
+}
+
+/* Container */
+.cv-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    animation: fadeIn 0.5s ease; /* Add fade-in animation */
+}
+
+/* Header */
+header {
+    text-align: center;
+    border-bottom: 2px solid #005bbb;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+    header h1 {
+        margin: 0;
+        font-size: 2.5em;
+        color: #005bbb;
+    }
+
+    header p {
+        margin: 0;
+        font-size: 1.2em;
+        color: #777;
+    }
+
+/* Sections */
+h2 {
+    color: #005bbb;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+/* Job section */
+.job {
+    position: relative; /* To position the icon */
+    padding-left: 40px; /* Leave space for icon */
+    transition: background-color 0.3s; /* Add transition for hover effect */
+}
+
+    .job:hover {
+        background-color: #e8f1ff; /* Change background on hover */
+    }
+
+    .job h3 {
+        font-size: 1.3em;
+        margin: 0;
+    }
+
+    .job p {
+        font-size: 1.1em;
+        color: #777;
+    }
+
+/* Skills section */
+.skills ul {
+    list-style-type: none; /* Remove default list style */
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+    .skills ul li {
+        background-color: #e8f1ff;
+        color: #007bff;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 0.9em;
+        display: inline-block;
+        transition: transform 0.3s; /* Add transition for hover effect */
+    }
+
+        .skills ul li:hover {
+            transform: scale(1.1); /* Scale effect on hover */
+        }
+
+/* Contact Info */
+.contact-info p {
+    font-size: 1.1em;
+}
+
+.contact-info a {
+    color: #005bbb;
+    text-decoration: none;
+    transition: color 0.3s; /* Add transition for color change */
+}
+
+    .contact-info a:hover {
+        text-decoration: underline;
+        color: #1b6ec2; /* Change color on hover */
+    }
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
